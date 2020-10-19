@@ -8,8 +8,8 @@ public class Intervenant extends Individu{
 
     
 
-    public Intervenant(String iBAN,String mdpI) {
-        super(mdpI);
+    public Intervenant(String iBAN,String mdpI, Personne pers) {
+        super(mdpI, pers);
         this.iBAN = iBAN;
     }
 
