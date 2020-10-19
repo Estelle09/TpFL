@@ -1,3 +1,4 @@
+package projet.model;
 /**
  *
  * @author 21509076
