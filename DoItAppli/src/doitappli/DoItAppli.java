@@ -18,6 +18,12 @@ public class DoItAppli {
     public static void main(String[] args) {
         // TODO code application logic here
 //laizhf
+
+
+// hrjydt
+
+//azlfzvlkh
+
     }
 
 }
