@@ -16,6 +16,7 @@ import projet.model.Client;
 import projet.model.Intervenant;
 import projet.model.PersMorale;
 import projet.model.PersPhysique;
+import projet.model.Plateforme;
 
 /**
  *
@@ -44,6 +45,13 @@ public class Projet {
         
         Intervenant I1 = new Intervenant("FR7618523697845", "abcdef", PM1);
         System.out.println(C1.getCodeI());
+        
+        //ajouter un nouveau client PP
+        
+        Plateforme DoIt = new Plateforme();
+        
+        DoIt.NouveauClientPP("blabla", "Viala", "Estelle", "Quai Saint Pierre", "31000", "Toulouse", 612345678L, "ev@gmail.com");
+        System.out.println(DoIt.getLstInscrit().get(0).getPers().getAdresseP());
         
     }
     
