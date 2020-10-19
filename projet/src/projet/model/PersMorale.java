@@ -16,8 +16,8 @@ public class PersMorale extends Personne {
 
     //CONSTRUCTEUR
     
-    public PersMorale(int codeP, String adresseP, String villeP, int cpP, int telP, String emailP, int numSiret, String nomSociete){
-        super ( codeP, adresseP, villeP, cpP, telP, emailP);
+    public PersMorale(String adresseP, String villeP, int cpP, int telP, String emailP, int numSiret, String nomSociete){
+        super (adresseP, villeP, cpP, telP, emailP);
         this.numSiret = numSiret;
         this.nomSociete = nomSociete;
     }
