@@ -16,13 +16,18 @@ public class PersPhysique extends Personne {
     
     //CONSTRUCTEUR
 
-    public PersPhysique(String adresseP, String villeP, int cpP, int telP, String emailP, String nomPP, String prenomPP) {
+    public PersPhysique(String adresseP, String villeP, String cpP, long telP, String emailP, String nomPP, String prenomPP) {
         super(adresseP, villeP, cpP, telP, emailP);
         this.nomPP = nomPP;
         this.prenomPP = prenomPP;
     }
     
     //GET AND SET
+
+    @Override
+    public int getCodeP() {
+        return super.getCodeP(); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public String getNomPP() {
         return nomPP;
