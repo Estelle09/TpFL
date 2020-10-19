@@ -16,8 +16,8 @@ public class PersPhysique extends Personne {
     
     //CONSTRUCTEUR
 
-    public PersPhysique(int codeP, String adresseP, String villeP, int cpP, int telP, String emailP, String nomPP, String prenomPP) {
-        super(codeP, adresseP, villeP, cpP, telP, emailP);
+    public PersPhysique(String adresseP, String villeP, int cpP, int telP, String emailP, String nomPP, String prenomPP) {
+        super(adresseP, villeP, cpP, telP, emailP);
         this.nomPP = nomPP;
         this.prenomPP = prenomPP;
     }
