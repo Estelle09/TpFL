@@ -12,13 +12,7 @@ package projet.model;
 
 public class Client extends Individu{
 
-    public Client() {
-    }
-
-    public Client(int codeI, String mdpI, Etat etatI) {
-        super(codeI, mdpI, etatI);
-    }
-    
-    
-    
+    public Client(String mdpI) {
+        super(mdpI);
+    }   
 }
