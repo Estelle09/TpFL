@@ -66,6 +66,12 @@ public class Individu {
     public void setEtatI(EtatInd etatI) {
         this.etatI = etatI;
     }
+
+    public Personne getPers() {
+        return pers;
+    }
+    
+    
     
 
 }
