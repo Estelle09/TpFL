@@ -5,13 +5,15 @@
  */
 package projet.model;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  *
  * @author jessi
  */
 public abstract class Personne {
-    
-    private int codeP;
+    private static final AtomicInteger codePersonne = new AtomicInteger();
+    private final int codeP;
     private String adresseP;
     private String villeP;
     private int cpP;
@@ -20,23 +22,28 @@ public abstract class Personne {
     
     //CONSTRUCTEUR
 
-     public Personne(int codeP, String adresseP, String villeP, int cpP, int telP, String emailP) {
+    /* public Personne(int codeP, String adresseP, String villeP, int cpP, int telP, String emailP) {
         this.codeP = codeP;
         this.adresseP = adresseP;
         this.villeP = villeP;
         this.cpP = cpP;
         this.telP = telP;
         this.emailP = emailP;
-    }
+    }*/
+     
+     public Personne(String adresseP, String villeP, int cpP, int telP, String emailP){
+        this.codeP=codePersonne.getAndIncrement();
+        this.adresseP = adresseP;
+        this.villeP = villeP;
+        this.cpP = cpP;
+        this.telP = telP;
+        this.emailP = emailP;
+     }
 
     //GET AND SET 
     
     public int getCodeP() {
         return codeP;
-    }
-
-    public void setCodeP(int codeP) {
-        this.codeP = codeP;
     }
 
     public String getAdresseP() {
