@@ -35,6 +35,32 @@ public class Plateforme {
         }
         return null;
     }
+    
+    public boolean DejaClient(Personne pers){
+        int i;
+        boolean dejaClient=false;
+        for(i=0; i<=this.lstInscrit.size(); i++){
+            if(this.lstInscrit.get(i).getPers()==pers){
+                if(this.lstInscrit.get(i) instanceof Client){
+                    dejaClient=true;
+                }
+            }
+        }
+        return dejaClient;
+    }
+    
+    public void NouveauClientPP(String mdpI, String nomPP, String prenomPP, String adressePP, String cPPP, String villePP, Long telPP, String emailPP){
+        if (!EmailExiste(emailPP)){
+            PersPhysique PP = new PersPhysique(adressePP, villePP, cPPP, telPP, emailPP, nomPP, prenomPP);
+            Client CPP = new Client(mdpI, PP);
+            this.lstInscrit.add(CPP);
+        } else {
+            Personne P = EmailPersonne(emailPP);
+            if (!DejaClient(P)){
+                Client CPP = new Client (mdpI,P);
+            }    
+        } //message d'erreur sinon
+    }
    
     
    
