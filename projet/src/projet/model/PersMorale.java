@@ -11,12 +11,12 @@ package projet.model;
  */
 public class PersMorale extends Personne {
    
-    private int numSiret;
+    private long numSiret;
     private String nomSociete;
 
     //CONSTRUCTEUR
     
-    public PersMorale(String adresseP, String villeP, int cpP, int telP, String emailP, int numSiret, String nomSociete){
+    public PersMorale(String adresseP, String villeP, String cpP, long telP, String emailP, long numSiret, String nomSociete){
         super (adresseP, villeP, cpP, telP, emailP);
         this.numSiret = numSiret;
         this.nomSociete = nomSociete;
@@ -24,11 +24,11 @@ public class PersMorale extends Personne {
     
     //GET AND SET
 
-    public int getNumSiret() {
+    public long getNumSiret() {
         return numSiret;
     }
 
-    public void setNumSiret(int numSiret) {
+    public void setNumSiret(long numSiret) {
         this.numSiret = numSiret;
     }
 
