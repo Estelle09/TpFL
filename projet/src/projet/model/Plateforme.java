@@ -61,6 +61,10 @@ public class Plateforme {
             }    
         } //message d'erreur sinon
     }
+
+    public ArrayList<Individu> getLstInscrit() {
+        return lstInscrit;
+    }
    
     
    
