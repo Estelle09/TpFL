@@ -16,8 +16,8 @@ public abstract class Personne {
     private final int codeP;
     private String adresseP;
     private String villeP;
-    private int cpP;
-    private int telP;
+    private String cpP;
+    private long telP;
     private String emailP; 
     
     //CONSTRUCTEUR
@@ -31,7 +31,7 @@ public abstract class Personne {
         this.emailP = emailP;
     }*/
      
-     public Personne(String adresseP, String villeP, int cpP, int telP, String emailP){
+     public Personne(String adresseP, String villeP, String cpP, long telP, String emailP){
         this.codeP=codePersonne.getAndIncrement();
         this.adresseP = adresseP;
         this.villeP = villeP;
@@ -62,19 +62,19 @@ public abstract class Personne {
         this.villeP = villeP;
     }
 
-    public int getCpP() {
+    public String getCpP() {
         return cpP;
     }
 
-    public void setCpP(int cpP) {
+    public void setCpP(String cpP) {
         this.cpP = cpP;
     }
 
-    public int getTelP() {
+    public long getTelP() {
         return telP;
     }
 
-    public void setTelP(int telP) {
+    public void setTelP(long telP) {
         this.telP = telP;
     }
 
