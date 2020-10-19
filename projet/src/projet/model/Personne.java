@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author jessi
  */
-public abstract class Personne {
+public class Personne {
     private static final AtomicInteger codePersonne = new AtomicInteger();
     private final int codeP;
     private String adresseP;
@@ -86,5 +86,5 @@ public abstract class Personne {
         this.emailP = emailP;
     }
     
-
+    
 }
