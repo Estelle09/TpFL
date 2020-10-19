@@ -19,18 +19,19 @@ public class Individu {
     private final int codeI;
     private String mdpI;
     private EtatInd etatI;
+    private Personne pers;
     private static final AtomicInteger codeIndividu = new AtomicInteger();
-    
     /*public Individu(int codeI, String mdpI, EtatInd etatI) {
         this.codeI = codeI;
         this.mdpI = mdpI;
         this.etatI = etatI;
     }*/
     
-    public Individu(String mdpI){
+    public Individu(String mdpI, Personne pers){
         this.mdpI=mdpI;
         this.etatI=EtatInd.créé;
         this.codeI=codeIndividu.getAndIncrement();
+        this.pers=pers;
     }
  
 //getEtat() c'est le getter 
