@@ -4,35 +4,41 @@
  * and open the template in the editor.
  */
 package projet.model;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  *
  * @author 21509076
  */
-enum Etat{
+enum EtatInd{
     créé, banni, supprimé
 }
 
 public class Individu {
-    private int codeI;
+    private final int codeI;
     private String mdpI;
-    private Etat etatI;
-
-    public Individu() {
-    }
+    private EtatInd etatI;
+    private static final AtomicInteger codeIndividu = new AtomicInteger();
     
-    public Individu(int codeI, String mdpI, Etat etatI) {
+    /*public Individu(int codeI, String mdpI, EtatInd etatI) {
         this.codeI = codeI;
         this.mdpI = mdpI;
         this.etatI = etatI;
+    }*/
+    
+    public Individu(String mdpI){
+        this.mdpI=mdpI;
+        this.etatI=EtatInd.créé;
+        this.codeI=codeIndividu.getAndIncrement();
     }
+ 
 //getEtat() c'est le getter 
 //setEtat() c'est le setter
 //getCode() c'est le getter
-    
+    //vérifier si le mot de passe entré correspond bien au mdp lié à l'email entré 
     public boolean verifierMdp(int codeI){
         boolean codeBon = false;
-        //relie avec BD
-        
         return codeBon;
     }
     
@@ -42,23 +48,21 @@ public class Individu {
         return codeI;
     }
 
-    public void setCodeI(int codeI) {
-        this.codeI = codeI;
-    }
 
     public String getMdpI() {
         return mdpI;
     }
-
-    public void setMdpI(String mdpI) {
+    
+    // pas besoin pour le moment
+    /*public void setMdpI(String mdpI) {
         this.mdpI = mdpI;
-    }
+    }*/
 
-    public Etat getEtatI() {
+    public EtatInd getEtatI() {
         return etatI;
     }
 
-    public void setEtatI(Etat etatI) {
+    public void setEtatI(EtatInd etatI) {
         this.etatI = etatI;
     }
     
