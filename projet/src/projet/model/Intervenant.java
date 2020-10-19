@@ -6,12 +6,10 @@ package projet.model;
 public class Intervenant extends Individu{
     private String iBAN;
 
-    public Intervenant(String iBAN) {
-        this.iBAN = iBAN;
-    }
+    
 
-    public Intervenant(String iBAN, int codeI, String mdpI, Etat etatI) {
-        super(codeI, mdpI, etatI);
+    public Intervenant(String iBAN,String mdpI) {
+        super(mdpI);
         this.iBAN = iBAN;
     }
 
