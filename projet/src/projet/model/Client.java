@@ -8,6 +8,8 @@
  *
  * @author 21509076
  */
+package projet.model;
+
 public class Client extends Individu{
 
     public Client() {
