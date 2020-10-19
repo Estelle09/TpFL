@@ -18,6 +18,23 @@ public class Plateforme {
         this.lstInscrit= new ArrayList<>();   
     }
     
+    //rechercher si mail existe 
+    public boolean EmailExiste(String email){
+        return this.lstInscrit.contains(email);
+    }
+    
+    //rechercher personne email  
+    public Personne EmailPersonne(String email){
+        int i;
+        for (i=0; i<=this.lstInscrit.size();i++){
+            if(this.lstInscrit.get(i).getPers().getEmailP()==email){
+                return this.lstInscrit.get(i).getPers();
+            } else {
+                return null;
+            }
+        }
+        return null;
+    }
    
     
    
