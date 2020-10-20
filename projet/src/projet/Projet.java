@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 
-//test
-
-//test2
-
-//test3
 
 package projet;
 
