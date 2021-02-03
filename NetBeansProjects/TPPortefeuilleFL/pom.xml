@@ -42,7 +42,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <sonar.organization>davidnavarreics</sonar.organization>
+        <sonar.organization>estelle09</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.projectKey>Estelle09_TpFL</sonar.projectKey>
         <sonar.java.libraries></sonar.java.libraries>
