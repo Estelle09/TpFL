@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp10.metier;
+package tp10.tp10.metier;
 
 /**
  *
