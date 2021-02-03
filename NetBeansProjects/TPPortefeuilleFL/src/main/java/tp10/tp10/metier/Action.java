@@ -4,10 +4,7 @@
  */
 package tp10.tp10.metier;
 
-/**
- *
- * @author perussel
- */
+
 public abstract class Action {
 
     private String nom;
@@ -20,7 +17,11 @@ public abstract class Action {
     public String getNom() {
         return nom;
     }
-
+    
+    /**
+     * 
+     * @param nom 
+     */
     public Action(String nom) {
         this.nom = nom;
     }
