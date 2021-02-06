@@ -30,5 +30,3 @@ jobs:
       run: mvn verify sonar:sonar --file NetBeansProjects/TPPortefeuilleFL/pom.xml
     - name: Check Javadoc
       run: mvn javadoc:javadoc --file NetBeansProjects/TPPortefeuilleFL/pom.xml
-    - name: Check Licences
-      run: mvn apache-rat:check --file NetBeansProjects/TPPortefeuilleFL/pom.xml
